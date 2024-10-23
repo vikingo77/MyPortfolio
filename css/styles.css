@@ -4,10 +4,21 @@
     --bg-color: hsl(0, 0%, 90%);
     --bg-card-color: hsl(0, 0%, 98%);
     --transition: color 0.1s, background-color 0.2s ease-in-out;
+    --border-radius: 0.4em; /*Con esto controlaremos los bordes sean iguales y delmismo tamaño*/
 }
 /* el asterisco significa para todos los componentes quiero esto*/
 *{
     box-sizing: border-box;
+}
+
+a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    display: block; /*para solucionar el problema de las imagenes no tienen bordes*/
 }
 
 body{ 
@@ -15,6 +26,7 @@ body{
     background-color: var(--bg-color);
     color: var(--text-color);
     transition: var(--transition);
+    font-family: sans-serif;
 }
 
 body.dark{
@@ -92,4 +104,56 @@ body.dark{
     text-align: center;
     color: var(--primary-color);
     transition: var(--transition);
+}
+
+.main{
+    display: grid;  /*Para que se vea en forma de grid para el estilo de movil*/
+    padding: 2em;
+}
+
+@media screen and (min-width: 720px){
+    .main{
+        grid-template-columns: min-content 1fr; /*Para que se vea en forma de grid para el estilo de escritorio*/
+    }
+
+}
+
+.card{
+    padding: 1em;
+    background-color: var(--bg-card-color);
+    border-radius: var(--border-radius);
+}
+
+.card__image-container{
+    min-width: 320px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+
+}
+
+.card__header{
+    padding: 1em 0; /*p1em0   shortcout*/
+}
+
+.card__title{
+    margin: 0;
+    font-size: 1.2rem
+}
+
+.card__subtitle{
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.card__link{
+    margin-bottom: 0.5em /*mb  shorcout*/; /*para separar los links entre si*/
+}
+
+.card__text{
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.icon{
+    margin-right: 1em;
 }

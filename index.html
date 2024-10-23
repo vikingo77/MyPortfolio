@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
     <link rel="stylesheet" href="css/styles.css" />
     <title>Portfolio</title>
   </head>
@@ -43,6 +46,52 @@
             class="colors__item colors_item--orange"></div>  <!--componente y modificadores-->
       </div>
     </header>
+    <main class="main">
+        <section class="column column--left">
+          <!--PROFILE CARD-->
+          <article class="card card--profile">
+            <div class="card__image-container">
+              <img 
+                  src="assets/images/profile.jpg"   
+                  alt="profile"
+                  class="card__image" /> <!--La imagen se podra reajustar con css-->
+            </div>
+            <div class="car__header">
+              <h2 class="card__title">Victor MAnuel</h2>
+              <p class="card__subtitle">Full Stack Developer</p>
+            </div>
+            <div class="card__body">
+              <div class="card__link">
+                <i class="fas fa-envelope icon"></i>
+                <a href="mailto:victormanuelfbi.cients@gmail.com">
+                  victormanuelfbi.cients@gmail.com
+                </a>
+              </div>
+              <div class="card__link">
+                <i class="fas fa-phone-alt icon"></i>
+                <a href="telf=71410795">
+                  +591-71410795
+                </a>
+              </div>
+              <p class="card__text">
+                Más de 9 años de experiencia en
+                desarrollo web. Apasionado de las
+                nuevas tecnologias y
+                en especial del
+                ecosistema de CSS y
+                JavaScript. <br />
+                Mi propósito es trasladar mi pasión
+                por enseñar tecnologias web a todos
+                aquellos que
+                quieran iniciarse en este campo de
+                una forma actualizada, con buenas
+                prácticas y desde
+                cero.
+              </p>
+            </div>
+          </article>
+        </section>
+    </main>
     <h1 class="title">Mi porfolio</h1>
     <script src="js/scripts.js"></script>
   </body>
