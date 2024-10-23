@@ -7,7 +7,43 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Portfolio</title>
   </head>
-  <body>
+  <body class="dark">
+    <header class="header">
+      <div 
+          id="toggle-theme" 
+          class="switches">
+        <div 
+            id="toggle-theme" 
+            class="toggle-theme">
+            <img
+                id="toggle-icon" 
+                src="assets/icons/moon.svg" 
+                alt="icon theme"
+                class="toggle-theme__icon" />
+            <p 
+                id="toggle-text" 
+                class="toggle-theme__text" >
+                Dark Mode</p>
+        </div>
+      </div>
+
+      <div id="toggle-colors" class="colors" >
+        <div 
+            data-color="hsl(214, 84%, 56%)" 
+            class="colors__item colors_item--blue"></div>  <!--componente y modificadores-->
+
+        <div 
+            data-color="hsl(150, 84%, 56%)"
+            class="colors__item colors_item--green"></div>  <!--componente y modificadores-->
+        <div 
+            data-color="hsl(276, 84%, 56%)"
+            class="colors__item colors_item--purple"></div>  <!--componente y modificadores-->
+        <div 
+            data-color="hsl(46, 84%, 56%)"
+            class="colors__item colors_item--orange"></div>  <!--componente y modificadores-->
+      </div>
+    </header>
+    <h1 class="title">Mi porfolio</h1>
     <script src="js/scripts.js"></script>
   </body>
 </html>
