@@ -15,6 +15,8 @@
       <div 
           id="toggle-theme" 
           class="switches">
+          <div>
+          </div>
         <div 
             id="toggle-theme" 
             class="toggle-theme">
@@ -27,6 +29,14 @@
                 id="toggle-text" 
                 class="toggle-theme__text" >
                 Dark Mode</p>
+        </div>
+      </div>
+      <div id="flags" class="flags">
+        <div class="flags__item" data-language="es">
+          <img src="assets/icons/es.svg" alt="">
+        </div>
+        <div class="flags__item" data-language="en">
+          <img src="assets/icons/us.svg" alt="">
         </div>
       </div>
 
@@ -57,8 +67,8 @@
                   class="card__image" /> <!--La imagen se podra reajustar con css-->
             </div>
             <div class="car__header">
-              <h2 class="card__title">Victor Manuel Flores Balderrama</h2>
-              <p class="card__subtitle">Full Stack Developer</p>
+              <h2 class="card__title no-margin">Victor Manuel Flores Balderrama</h2>
+              <p class="card__subtitle no-margin2" data-section="profile" data-value="rol">Full Stack Developer</p>
             </div>
             <div class="card__body">
               <div class="card__link">
@@ -73,7 +83,7 @@
                   +591-71410795
                 </a>
               </div>
-              <p class="card__text">
+              <p class="card__text" data-section="profile" data-value="description">
                 Más de 9 años de experiencia en
                 desarrollo web. Apasionado de las
                 nuevas tecnologias y
@@ -90,12 +100,66 @@
               </p>
             </div>
           </article>
+          <article class="card card--experience">
+            <h2 class="card__title">Experience</h2>
+            <div class="experience">
+              <img src="assets/images/logo.png" alt="Logo" class="experience__image">
+              <div class="experience__info">
+                <p class="experience__time">Febrero del 2017 - current</p>
+                <h3 class="experience__job">Front End Developer</h3>
+                <p class="experience__description">
+                  Desarrollo de aplicaciones web
+                  con tecnologias como HTML, CSS y
+                  JavaScript. Creación de
+                  aplicaciones web con Angular y
+                  Nodejs.
+              </div>
+            </div>
+            <div class="experience">
+              <img src="assets/images/logo.png" alt="Logo" class="experience__image">
+              <div class="experience__info">
+                <p class="experience__time">Febrero del 2017 - current</p>
+                <h3 class="experience__job">Front End Developer</h3>
+                <p class="experience__description">
+                  Desarrollo de aplicaciones web
+                  con tecnologias como HTML, CSS y
+                  JavaScript. Creación de
+                  aplicaciones web con Angular y
+                  Nodejs.
+              </div>
+            </div>
+            <div class="experience">
+              <img src="assets/images/logo.png" alt="Logo" class="experience__image">
+              <div class="experience__info">
+                <p class="experience__time">Febrero del 2017 - current</p>
+                <h3 class="experience__job">Front End Developer</h3>
+                <p class="experience__description">
+                  Desarrollo de aplicaciones web
+                  con tecnologias como HTML, CSS y
+                  JavaScript. Creación de
+                  aplicaciones web con Angular y
+                  Nodejs.
+              </div>
+            </div>
+          </article>
+          <article class="card card--hobies">
+            <h2 class="card__title">Hobbies</h2>
+            <div class="card__image--container">
+              <img src="assets/images/hobbie.jpg" alt="Man on a bike" class="card__image">
+            </div>
+            <h3 class="hobbie__title">Biking</h3>
+            <p class="card__text">
+              Me encanta salir a pasear en bicicleta
+              por la ciudad. Es una forma de
+              desconectar y disfrutar de la naturaleza
+              en la ciudad.
+          </article>
         </section>
         <section class="column column--right">
           <article class="card">
             <h2 class="card__title">Front End</h2>
             <small>Años de experiencia</small>
-            <div class="skills__header">
+            <div class="skills__header card__text">
               <span class="skills start-level">
                 0
               </span>
@@ -157,6 +221,105 @@
               </div>
             </div>
           </article>
+          <artile class="card card--proyect">
+            <div class="card__image-container"> <!--Extraña clase talves viene por defecto de css-->
+              <img src="assets/images/project.jpg" alt="Landing page" class="card__image">
+            </div>
+            <div class="proyect">
+              <div class="proyect--tags card__text">
+                <span class="proyect--tag">#HTML</span>
+                <span class="proyect--tag">#CSS</span>
+                <span class="proyect--tag">#JavaScript</span>
+                <span class="proyect--tag">#Responsive</span>
+              </div>
+            
+            <h2 class="card__title">Landing page</h2>
+            <p class="card__text">
+              Diseño y desarrollo de una landing
+              page para una empresa de tecnologia.
+              La página es responsive y se ha
+              desarrollado con HTML, CSS y
+              JavaScript.
+            </p>
+            <p class="card__text">
+              Diseño y desarrollo de una landing
+              page para una empresa de tecnologia.
+              La página es responsive y se ha
+              desarrollado con HTML, CSS y
+              JavaScript.
+            </p>
+            <div class="buttons">
+              <a href="#" class="button button--primary">Demo</a>
+              <a href="#" class="button button--ghost">Code</a>
+            </div>
+            </div>
+          </artile>
+          <artile class="card card--proyect">
+            <div class="card__image-container"> <!--Extraña clase talves viene por defecto de css-->
+              <img src="assets/images/project.jpg" alt="Landing page" class="card__image">
+            </div>
+            <div class="proyect">
+              <div class="proyect--tags card__text">
+                <span class="proyect--tag">#HTML</span>
+                <span class="proyect--tag">#CSS</span>
+                <span class="proyect--tag">#JavaScript</span>
+                <span class="proyect--tag">#Responsive</span>
+              </div>
+            
+            <h2 class="card__title">Landing page</h2>
+            <p class="card__text">
+              Diseño y desarrollo de una landing
+              page para una empresa de tecnologia.
+              La página es responsive y se ha
+              desarrollado con HTML, CSS y
+              JavaScript.
+            </p>
+            <p class="card__text">
+              Diseño y desarrollo de una landing
+              page para una empresa de tecnologia.
+              La página es responsive y se ha
+              desarrollado con HTML, CSS y
+              JavaScript.
+            </p>
+            <div class="buttons">
+              <a href="#" class="button button--primary">Demo</a>
+              <a href="#" class="button button--ghost">Code</a>
+            </div>
+            </div>
+          </artile>
+          <artile class="card card--proyect">
+            <div class="card__image-container"> <!--Extraña clase talves viene por defecto de css-->
+              <img src="assets/images/project.jpg" alt="Landing page" class="card__image">
+            </div>
+            <div class="proyect">
+              <div class="proyect--tags card__text">
+                <span class="proyect--tag">#HTML</span>
+                <span class="proyect--tag">#CSS</span>
+                <span class="proyect--tag">#JavaScript</span>
+                <span class="proyect--tag">#Responsive</span>
+              </div>
+            
+            <h2 class="card__title">Landing page</h2>
+            <p class="card__text">
+              Diseño y desarrollo de una landing
+              page para una empresa de tecnologia.
+              La página es responsive y se ha
+              desarrollado con HTML, CSS y
+              JavaScript.
+            </p>
+            <p class="card__text">
+              Diseño y desarrollo de una landing
+              page para una empresa de tecnologia.
+              La página es responsive y se ha
+              desarrollado con HTML, CSS y
+              JavaScript.
+            </p>
+            <div class="buttons">
+              <a href="#" class="button button--primary">Demo</a>
+              <a href="#" class="button button--ghost">Code</a>
+            </div>
+            </div>
+          </artile>
         </section>
     </main>
     <h1 class="title">Mi porfolio</h1>

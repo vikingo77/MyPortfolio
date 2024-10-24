@@ -60,6 +60,22 @@ body.dark{
     cursor: pointer;
 }
 
+.flags{
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flags__img{
+    cursor:pointer;
+    display: block;
+}
+
+.flags__item{
+    width: 30px;
+}
+
 .toggle-theme__icon{
     font-size: 1.5em;
     margin-right: 0.5em;
@@ -153,7 +169,7 @@ body.dark{
 }
 
 .card__title{
-    margin: 0;
+    margin-bottom: 1em;
     font-size: 1.2rem
 }
 
@@ -169,6 +185,14 @@ body.dark{
 .card__text{
     font-size: 0.9rem;
     line-height: 1.6;
+}
+
+@media screen and (min-width: 760px){
+    .card--proyect{
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-column: 1 / -1;
+    }
 }
 /*Este es el bloque que va contener tanto el titulo como nuestras barras de progreso*/
 .skills{
@@ -251,8 +275,115 @@ body.dark{
     --skills-bar-length:90%;
 }
 
+.experience{
+    display: flex;
+    align-items: start;
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.experience__image{
+    max-width: 15%;
+    margin-right: 1em;
+}
+
+.experience__time{
+    font-size: 0.8rem;
+    margin-bottom: 0.5em;
+}
+
+.experience__job{
+    margin : 0;
+    margin-bottom: 0.5em;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.experience__description{
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.proyect{
+    position:relative;
+}
+
+@media screen and (min-width: 760px){
+    .proyect{
+        margin-left: 2em;
+    }  
+}
+
+.proyect--tags{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em 0;
+    font-size: 0.6rem;
+    width: 275px;
+}
+
+@media screen and (min-width: 760px){
+    .proyect--tags{
+        width: 325px;
+        font-size: 0.8rem;
+    }  
+}
+
+.proyect--tag{
+    padding: 0.4em 0.8em;
+    border-radius: var(--border-radius);
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 225px;
+}
+
+@media screen and (min-width: 760px){
+    .buttons{
+        position: absolute;
+        bottom: 1em;
+    }  
+    
+}
+
+.button{
+    width: 100px;
+    line-height: 2.5;
+    text-align: center;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    color: var(--bg-color);
+}
+
+.button--primary{
+    background-color: var(--primary-color);
+    
+}
+
+.button--ghost{
+    background-color: transparent;
+    border: 1px var(--primary-color) solid;
+    color: var(--primary-color);
+}
+
 .icon{
     margin-right: 1em;
+}
+
+.no-margin{
+    margin-top: 0.5em;
+    margin-bottom: 0em;
+}
+
+.no-margin2{
+    margin-top: 0em;
 }
 
 @keyframes skills-bar-fill{
